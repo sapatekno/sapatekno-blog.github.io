@@ -3,8 +3,8 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# Only if your site type is GitHub Project sites and doesn't have a custom domain,
-# change below value to '/projectname'.
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
 baseurl: ''
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
@@ -13,43 +13,43 @@ baseurl: ''
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Jakarta
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hadian Alkani                          # the main title
+title: Chirpy                          # the main title
 
-tagline: Mobile App Developer   # it will display as the sub-title
+tagline: A text-focused Jekyll theme   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Android Developer with 3+ years experience in Mobile App Developer industry. 
-  Experienced in making applications using Flutter And Kotlin, 
-  I also do freelance work to create Android Applications.
+  A minimal, portfolio, sidebar,
+  bootstrap Jekyll theme with responsive web design
+  and focuses on text presentation.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://sapatekno.com'
+url: ''
 
 github:
-  username: sapatekno             # change to your github username
+  username: github_username             # change to your github username
 
 twitter:
-  username: hadianalkani            # change to your twitter username
+  username: twitter_username            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Hadian Alkani
-  email: admin@sapatekno.com             # change to your email address
+  name: your_full_name
+  email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/hadianalkani      # change to your twitter homepage
-    - https://github.com/sapatekno       # change to your github homepage
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/hadian.alkani
-    - https://www.linkedin.com/in/hadianalkani
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
 
-google_site_verification: 'herXoKSbDnpx_db_i8a0kb3i0gF0jLU9U8-TYg6lAa0' # change to your verification string
+google_site_verification: google_meta_tag_verification # change to your verification string
 
 # ↑ --------------------------
 
@@ -79,17 +79,17 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: ''
+img_cdn: 'https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@0a003683c0c3ca549d12c309f9b3e03ea20981e5'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/sapatekno/sapatekno-assets/images/avatar.jpg
+avatar: '/commons/avatar.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
 
 disqus:
-  comments: true  # boolean type, the global switch for posts comments.
-  shortname: 'sapatekno'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 paginate: 10
 
@@ -136,7 +136,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
 
 sass:
   style: compressed
@@ -159,7 +158,7 @@ exclude:
   - LICENSE
   - gulpfile.js
   - node_modules
-  - '*.json'
+  - package*.json
 
 jekyll-archives:
   enabled: [categories, tags]
